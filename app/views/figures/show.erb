@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <h1>Check out the Collection of Figures</h1>
+  <%= @figure.name%>
+  <% @figure.landmarks.uniq.each do |landmark|%>
+    <%= landmark%>
+    <%= landmark.name%>
+    <%= landmark.year_completed%>
+  <%end%>
+  <%= @figure.titles%>
+</body>
+</html>
